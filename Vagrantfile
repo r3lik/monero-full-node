@@ -1,7 +1,7 @@
 Vagrant.configure("2") do |config|
   config.vm.box = "ubuntu/xenial64"
   config.disksize.size = '55GB'
-  config.vm.hostname = "ubuntu-xmr"
+  config.vm.hostname = "fullnode"
   # Ignore vguest updates during prov (faster)
   # config.vbguest.auto_update = false
   config.vm.synced_folder "storage/", "/vagrant/storage", create: true
