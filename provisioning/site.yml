@@ -1,0 +1,5 @@
+---
+# file: site.yml
+
+# installs the basics
+- import_playbook: playbooks/base.yml

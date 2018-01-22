@@ -1,0 +1,7 @@
+---
+# Installs Docker, K8s, devtools etc. 
+
+- hosts: all
+  become: yes
+  roles:
+    - base
