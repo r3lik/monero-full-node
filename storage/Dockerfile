@@ -1,6 +1,8 @@
 # Usage: sudo docker run --name monerod -t r3lik/monero-full-node 
 FROM ubuntu:16.04
 
+LABEL maintainer="mike@r3lik.com"
+
 ENV MONERO_VERSION=0.11.1.0 MONERO_SHA256=6581506f8a030d8d50b38744ba7144f2765c9028d18d990beb316e13655ab248
 
 # Get basic packages
@@ -24,4 +26,6 @@ VOLUME /root/.bitmonero
 EXPOSE 18080 18081
 
 ENTRYPOINT ["./monerod"]
-#CMD ["--restricted-rpc", "--rpc-bind-ip=0.0.0.0", "--confirm-external-bind"]
+
+# allow connections
+CMD ["--restricted-rpc", "--rpc-bind-ip=0.0.0.0", "--confirm-external-bind"]
