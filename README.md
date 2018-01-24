@@ -1,5 +1,3 @@
-* Docker
-        
         # create volume
         sudo docker volume create monero-blockchain
      
