@@ -1,4 +1,4 @@
-# Usage: sudo docker run --name monerod -t r3lik/monero-full-node 
+# Usage: sudo docker run --name monerod -v monero-blockchain:/root/.bitmonero -t r3lik/monero-full-node 
 FROM ubuntu:16.04
 
 LABEL maintainer="mike@r3lik.com"
