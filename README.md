@@ -1,4 +1,22 @@
-        # create volume
+# Monero-full-node
+
+Run the XMR fullnode in a Docker container that is provisioned with Vagrant and Ansible.
+
+## Requirements
+
+- Vagrant
+- Vagrant-disksize
+
+```
+vagrant plugin install vagrant-disksize
+```
+
+## Usage
+
+Dockerfile gets provisioned to `/vagrant/storage/Dockerfile`
+ 
+
+       # create volume
         sudo docker volume create monero-blockchain
      
         # either run in foreground
