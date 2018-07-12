@@ -3,12 +3,12 @@ Vagrant.configure("2") do |config|
   config.disksize.size = '55GB'
   config.vm.hostname = "fullnode"
   # Ignore vguest updates during prov (faster)
-  # config.vbguest.auto_update = false
+  config.vbguest.auto_update = false
   config.vm.synced_folder "storage/", "/vagrant/storage", create: true
   
 config.vm.provider "virtualbox" do |v|   
-  v.memory = 4096   
-  v.cpus = 2
+  v.memory = 1024   
+  v.cpus = 1
 end
 
   # -= ANSIBLE =-
