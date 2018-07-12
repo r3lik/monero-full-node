@@ -17,8 +17,7 @@ RUN curl https://downloads.getmonero.org/cli/monero-linux-x64-v$MONERO_VERSION.t
   tar -xjvf monero-linux-x64-v$MONERO_VERSION.tar.bz2 &&\
   rm monero-linux-x64-v$MONERO_VERSION.tar.bz2 &&\
   cp ./monero-v$MONERO_VERSION/monerod . &&\
-  cp ./monero-v$MONERO_VERSION/monero-wallet-cli . &&\ 
-  rm -r monero-*
+  cp ./monero-v$MONERO_VERSION/monero-wallet-cli .  
 
 # blockchain location - portable only 
 VOLUME /root/.bitmonero
